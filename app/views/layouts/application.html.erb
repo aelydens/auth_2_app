@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<% if notice %>
+  <%= notice %>
+<% end %>
+
 <% if current_user %>
   <%= link_to "Sign Out", sign_out_path %>
 <% else %>
